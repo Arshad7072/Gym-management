@@ -30,6 +30,7 @@ ALLOWED_HOSTS = [
     'localhost',
 ]
 
+ALLOWED_HOSTS = ['gym-management-5-3q2y.onrender.com']
 
 
 
