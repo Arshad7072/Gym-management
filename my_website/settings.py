@@ -24,13 +24,9 @@ SECRET_KEY = 'django-insecure-l(agu#k66@ww)@kzku=0@a$dhqm@iawm)k&e_3w^=cu@)*=)#)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = [
-    'gym-management-1-bwk3.onrender.com',  # new Render domain
-    '127.0.0.1',
-    'localhost',
-]
+ALLOWED_HOSTS = ['gym-management-project.onrender.com', 'localhost', '127.0.0.1']
 
-ALLOWED_HOSTS = ['gym-management-5-3q2y.onrender.com']
+
 
 
 
@@ -47,6 +43,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware', 
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -54,7 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware', 
+    
 ]
 
 ROOT_URLCONF = 'my_website.urls'
