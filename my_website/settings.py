@@ -24,9 +24,7 @@ SECRET_KEY = 'django-insecure-l(agu#k66@ww)@kzku=0@a$dhqm@iawm)k&e_3w^=cu@)*=)#)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = [
-    'gym-management-1-bwk3.onrender.com'
-]
+ALLOWED_HOSTS = []
  
 
 
